@@ -15,6 +15,7 @@ const idElement = document.getElementById("id");
 const myLoanElement = document.getElementById("myLoan");
 const errorElement = document.getElementById("error");
 const payLoanElement = document.getElementById("payloan");
+const imgElement = document.getElementById("img");
 
 let computers = [];
 //let myLoan = 0;
@@ -25,17 +26,17 @@ fetch("https://noroff-komputer-store-api.herokuapp.com/computers")
     .then(data => computers = data)
     .then(computers => addComputersToList(computers));
 
-    //add computers to selectlist
+    //writeout chosen computers name in select
 const addComputersToList = (computers) => {
      computers.forEach(x => addComputerToList(x)); 
      titleElement.innerText = computers[0].title;
      featuresElement.innerText = computers[0].specs;
      descriptionElement.innerText = computers[0].description;
      priceElement.innerText = computers[0].price;
+     imgElement.innerHTML = "<img src='https://noroff-komputer-store-api.herokuapp.com/" + computers[0].image + "'>";
     // idElement.innerText = computers[0].id;
 }
- 
-//writeout chosen computers name in select
+ //add computers to selectlist
 const addComputerToList = (computer) => {
     const computerElement = document.createElement("option");
     computerElement.value = computer.id;
@@ -55,6 +56,8 @@ const handleComputerListChange = e => {
     descriptionElement.innerText = selectedComputer.description;
     featuresElement.innerText = selectedComputer.specs;
     priceElement.innerText = selectedComputer.price;
+    imgElement.innerHTML = "<img src='https://noroff-komputer-store-api.herokuapp.com/" + selectedComputer.image + "'>";
+
 }
 
 //handle chosen computer
