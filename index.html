@@ -16,15 +16,18 @@
    <section>
     <h2>Joe Banker</h2>
     <span>Balance </span> <span id="balance"></span>
+    
     <button id="loanbtn">Get a loan</button>
+    <span id="myLoan"></span>
+    <div id="payBack"></div>
    </section>
 
    <section>
     <h2>Work</h2>
     <span>Pay </span> <span id="pay"></span>
     <div class="grid2">
-        <button name="bank" id="bank">Bank</button>
-        <button id="work">Work</button>
+        <button name="bank" id="bank" onClick="bankBtn()">Bank</button>
+        <button id="work" onClick="workBtn()">Work</button>
     </div>
    </section>
 
@@ -32,8 +35,6 @@
     <h2>Laptops</h2>
     <select name="computers" id="computers"></select>
 
-
-    <ul id="features"></ul>
    </section>
 
    </div>
@@ -44,11 +45,16 @@
     </ul>
     <img src="">
     <h2 id="title"></h2>
+    <span>Description: </span>
     <p id="description"></p>
+    <span>Features: </span>
     <span id="features"></span>
     <span>Price: </span>
     <span id="price"></span>
-    <button class="buyNow">Buy Now</button>
+    
+    <button class="buyNow" id="id" onClick="buyNow()">Buy Now</button>
+
+    <span id="bought"></span>
    </div>
 
    <footer>
