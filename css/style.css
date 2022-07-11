@@ -1,3 +1,128 @@
 #payloan {
     display: none;
 }
+header {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.headerdiv {
+    padding-left: 2em;
+}
+h1 {
+    color: lightgray;
+    font-family: arial;
+}
+.grid3 {
+    margin-top: 5em;
+    column-gap: 1em;
+    padding: 2em;
+}
+section {
+    background-color: rgb(248, 248, 235);
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+h2 {
+    font-family: arial;
+}
+p, span {
+    font-family: arial;
+}
+.grid2 {
+    column-gap: 10px;
+    margin-top: 2em;
+}
+button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+button:hover {
+    cursor: pointer;
+}
+#loanbtn {
+    background-color: lightgreen;
+}
+#payloan {
+    background-color: green;
+    color: white;
+}
+#bank {
+    background-color: rgb(238, 238, 2);
+}
+#work {
+    background-color:blue;
+    color: white;
+}
+select {
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding: 5px;
+}
+#feature {
+    font-family: arial;
+    font-weight: 500;
+}
+li {
+    list-style: none;
+    font-family: arial;
+    margin-left: -2.5em;
+}
+.bottomdiv {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(248, 248, 235);
+    border-radius: 10px;
+    padding: 1em;
+}
+img {
+    max-width: 60%;
+}
+.third {
+    margin-top: 2em;
+}
+#price {
+    font-size: 1.5em;
+    margin-left: 35%;
+}
+#pricekr {
+    font-size: 1.5em;
+}
+#buyNow {
+    margin-top: 1em;
+    width: 80%;
+    margin-left: 2em;
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 600px) {
+    .grid3 {
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+        padding: 2em;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        margin-top: 2em;
+    }
+    .bottomdiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 800px;
+        margin: auto;
+        background-color: rgb(248, 248, 235);
+        border-radius: 10px;
+        padding: 1em;
+    }
+   
+}

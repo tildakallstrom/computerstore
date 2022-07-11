@@ -9,23 +9,29 @@
 </head>
 <body>
    <header>
+    <div class="headerdiv">
     <h1>Komputer Store</h1>
+</div>
    </header>
    
    <div class="grid3">
    <section>
     <h2>Joe Banker</h2>
-    <span>Balance </span> <span id="balance"></span>
-    
+<div>
+    <span>Balance </span> <span id="balance">0</span><span>kr</span>
+</div>
+<div>
+    <span id="myLoanTxt"></span><span id="myLoan"></span><span id="myLoanKr"></span>
+</div>
+
     <button id="loanbtn">Get a loan</button>
-    <span>My loan </span><span id="myLoan"></span>
     <div id="payBack"><button id='payloan'>Pay back</button></div>
     <span id="error"></span>
    </section>
 
    <section>
     <h2>Work</h2>
-    <span>Pay </span> <span id="pay"></span>
+    <span>Pay </span> <span id="pay"></span><span id="paykr"></span>
     <div class="grid2">
         <button id="bank" onClick="bankBtn()">Bank</button>
         <button id="work" onClick="workBtn()">Work</button>
@@ -35,25 +41,29 @@
    <section>
     <h2>Laptops</h2>
     <select name="computers" id="computers"></select>
-    
+    <span id="feature">Features: </span>
+    <ul id="features"></ul>
    </section>
 
    </div>
 
-   <div class="bottomdiv">
-    <ul id="computer">
+ <ul id="computer">
 
-    </ul>
+</ul>
+
+   <div class="bottomdiv">
+   
     <div id="img"></div>
+
+    <div>
     <h2 id="title"></h2>
-    <span>Description: </span>
     <p id="description"></p>
-    <span>Features: </span>
-    <span id="features"></span>
-    <span>Price: </span>
-    <span id="price"></span>
+    </div>
+
+    <div class="third">
+    <span id="price"></span><span id="pricekr"> kr</span>
     <button id="buyNow">Buy now</button>
-    
+    </div>
 
     <span id="bought"></span>
    </div>
